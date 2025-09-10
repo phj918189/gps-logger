@@ -40,6 +40,7 @@ else:
 
 app = Flask(__name__)
 
+
 # ---------------------- DB ----------------------
 def get_db_connection():
     if DB_TYPE == 'postgresql':
