@@ -1,4 +1,8 @@
 # gps_server.py
+
+# 파일 상단에 추가
+import sqlite3
+import psycopg2
 from flask import Flask, request, jsonify, send_file, Response
 from datetime import timedelta, timezone, datetime
 from zoneinfo import ZoneInfo
