@@ -16,7 +16,7 @@ APP_PORT = int(os.getenv('PORT', 5000))
 KST = ZoneInfo("Asia/Seoul")
 
 # 데이터베이스 설정 (PostgreSQL 또는 SQLite)
-DATABASE_URL = os.getenv('DATABASE_URL')
+DATABASE_URL = os.getenv('DATABASE_URL') or 'postgresql://postgres:UgnRlmZaCZoShyRRoOMejRPnqvXlBeFf@postgres.railway.internal:5432/railway'
 if DATABASE_URL:
     # Railway PostgreSQL
     try:
